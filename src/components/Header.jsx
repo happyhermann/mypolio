@@ -12,13 +12,13 @@ const Headers = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  position: fixed;
+  padding: 20px 30px;
   width: 100%;
-  top: 0;
-  position: relative;
   background-color: #202224;
   color: white;
+  z-index: 1;
+  position: fixed;
+  top: 0;
 
   // fade in
   @keyframes slide-fade-in-dropdown-animation {
@@ -42,20 +42,20 @@ const Headers = styled.header`
   .menuButton {
     cursor: pointer;
     position: absolute;
-    top: 12px;
+    top: 18px;
     right: 50px;
     font-size: 20px;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 15px 100px;
+    padding: 15px 90px;
 
     i {
       display: none;
     }
   }
   @media screen and (min-width: 1200px) {
-    padding: 15px 100px;
+    padding: 24px 100px;
 
     i {
       display: none;
@@ -66,6 +66,7 @@ const Headers = styled.header`
 const Name = styled.div`
   color: white;
   font-size: 18px;
+  cursor: pointer;
 `;
 
 const NavUl = styled.ul`
@@ -88,6 +89,11 @@ const NavLi = styled.li`
 function Header() {
   const [dropdownVisibility, setDropdownVisibility] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const onTop = () => {
+    window.scrollTo(0, 0);
+  };
+  // if clicked, scrolling to the top
 
   const resizingHandler = () => {
     if (window.innerWidth <= 768) {
@@ -113,7 +119,7 @@ function Header() {
   return (
     <Headers>
       <Name className="myName">
-        <h1>이치윤입니다</h1>
+        <h1 onClick={onTop}>이치윤입니다</h1>
       </Name>
       <i
         onClick={(e) => setDropdownVisibility(!dropdownVisibility)}
@@ -122,16 +128,16 @@ function Header() {
       <Dropdown visibility={dropdownVisibility}>
         <NavUl className="nav_ul">
           <NavLi className="nav_list">
-            <span className="list_text">About Me</span>
+            <span className="list_text">Skills</span>
           </NavLi>
           <NavLi>
-            <span className="list_text">Skills</span>
+            <span className="list_text">Exprience</span>
           </NavLi>
           <NavLi>
             <span className="list_text">Project</span>
           </NavLi>
           <NavLi>
-            <span className="list_text"> Contact</span>
+            <span className="list_text">Contact</span>
           </NavLi>
         </NavUl>
       </Dropdown>
