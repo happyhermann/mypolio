@@ -6,17 +6,20 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
- 
+  
     ${reset}
     
     * {
         box-sizing: border-box;
+        scroll-behavior: smooth;
+        // 스크롤 메서드 스무스하게
+
         
         
     }
     body{
-
-        background-color: #ffffff;
+        font-family: 나눔스퀘어, 'NanumSquare', sans-serif;  
+         background-color: #ffffff;
  
 
 

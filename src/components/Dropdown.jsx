@@ -10,7 +10,7 @@ const Section = styled.section`
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 48px;
+      top: 58px;
       left: 0;
       background-color: transparent;
       width: 100vw;
