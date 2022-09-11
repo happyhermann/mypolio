@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import theme from "../theme";
@@ -87,9 +87,17 @@ const NavLi = styled.li`
   }
 `;
 
-function Header() {
+interface refType {
+  refs: React.RefObject<HTMLElement>;
+}
+
+function Header({ refs }: refType) {
   const [dropdownVisibility, setDropdownVisibility] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const scrollToSkill = () => {
+    refs?.current?.scrollIntoView();
+  };
 
   const onTop = () => {
     window.scrollTo(0, 0);
@@ -128,7 +136,7 @@ function Header() {
       ></i>
       <Dropdown visibility={dropdownVisibility}>
         <NavUl className="nav_ul">
-          <NavLi className="nav_list">
+          <NavLi onClick={scrollToSkill} className="nav_list">
             <span className="list_text">Skills</span>
           </NavLi>
           <NavLi>
