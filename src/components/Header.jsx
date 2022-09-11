@@ -72,6 +72,7 @@ const Name = styled.div`
 const NavUl = styled.ul`
   display: flex;
   color: white;
+  opacity: 0.8;
 
   justify-content: space-between;
 `;

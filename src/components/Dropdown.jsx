@@ -11,6 +11,7 @@ const Section = styled.section`
       flex-direction: column;
       position: absolute;
       top: 58px;
+
       left: 0;
       background-color: transparent;
       width: 100vw;
