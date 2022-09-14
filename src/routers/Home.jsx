@@ -99,9 +99,10 @@ const NavLi = styled.li`
 
 const Wrapper = styled.section`
   width: 100%;
+  line-height: 34px;
 
   .english_text {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px;
     font-weight: 400;
   }
@@ -142,6 +143,7 @@ const Banner = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.4)),
     url(${profileImg});
   background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -605,7 +607,7 @@ function Home() {
                 setCurrentTab(tabRef.current[3]);
               }}
             >
-              <span className="list_text">English</span>
+              <span className="list_text">Others</span>
             </NavLi>
             <NavLi
               onClick={() => {
@@ -957,7 +959,7 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      반응형 웹 디자인 적용
+                      리디북스 온라인 서점 반응형 웹 레이아웃, 스타일 클론
                     </li>
 
                     <li>
@@ -970,7 +972,7 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      타입스크립트와 리액트를 활용하여 구현
+                      typescript를 사용하여 개발환경 구축
                     </li>
                     <li>
                       <svg
@@ -993,7 +995,11 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      카카오 도서 검색 API를 axios를 사용하여 데이터 통신
+                      Axios ‘GET’ ‘POST’를 사용하여 XML 데이터 간편하게 통신
+                      카카오 책 검색 API를 ‘GET’ 메서드를 통해 받아와서 도서
+                      검색 search창에 검색 관련 도서 데이터를 바인딩 회원가입,
+                      로그인, 로그아웃 기능을 (패스트캠퍼스 파이널 프로젝트때
+                      제공받은) ‘POST’ 메서드를 사용하여 구현{" "}
                     </li>
                     <li>
                       {" "}
@@ -1005,8 +1011,13 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      useForm으로 Validation 간단 구현 (회원가입, 로그인,
-                      로그아웃) 구현
+                      recoil/persist로 전역적 상태관리 로그인에 성공하면 해당
+                      API 응답에 token이 실려오는데 이 것을 조건문으로 받아
+                      로그인에 성공했다면 응답된 데이터 객체에 있는 닉네임,
+                      아이디, 비밀번호에 있는 값들을 persist를 통해 로컬
+                      스토리지에 저장 하고 useNavigate를 통해 홈 화면으로
+                      이동하게 함 도서 검색 결과 data 및 사용자 검색 기록,
+                      찜하기 기능등을 recoil state로 관리
                     </li>
                     <li>
                       {" "}
@@ -1018,7 +1029,26 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      styled-components로 동적인 UI 관리 및 전역적 스타일링 설정
+                      각종 JS 배열 메서드를 이용하여 검색 결과 data를 10개
+                      객체로 페이지당 포스트 갯수로 할당해 Pagination 구현
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      style component를 사용하여 조건부 스타일링 동적인 UI 구현
+                      : useState로 사용자 버튼 클릭시 슬라이더 좌우로 움직이게
+                      해주는 function에서 값을 받아서 props를 통해 css 제어
+                      전역적/선택적 코드 관리 : GlobalStyle과 ThemeProvider를
+                      전역적인 CSS 코드 관리 (common style) 미디어 쿼리 반응형
+                      웹 구현 : typescript theme에 mobile-width : 768px;
+                      선언하고 간편히 사용
                     </li>
                   </ul>
                   <div>
@@ -1106,7 +1136,8 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      마크업&디자인 프로필 수정 메인페이지 담당
+                      피그마를 통한 디자인 시안 제작, 만든 시안을 팀원들에게
+                      공유
                     </li>
                     <li>
                       {" "}
@@ -1118,7 +1149,8 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      Github, Notion 등 협업 워크플로우 경험
+                      미디어 쿼리를 이용해 부분적 반응형 웹 구현 (모바일 -
+                      데스크탑)
                     </li>
                     <li>
                       {" "}
@@ -1130,7 +1162,10 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      기획, 마크업, 기능 구현 등 프로젝트 구체적 내용 설정
+                      style component를 사용하여 동적인 UI 구현 useState로
+                      state를 관리하고 props를 통해 세로 스크롤 값이나
+                      브라우저내 클릭한 위치 (e.target), 캐러셀 값 (vw) 등을
+                      css에 전달하여 동적 스타일링을 간편하게 제어
                     </li>
                     <li>
                       {" "}
@@ -1142,7 +1177,61 @@ function Home() {
                       >
                         <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                       </svg>
-                      API 활용 능력 향상
+                      redux를 이용해 회원 정보 정보 수정 페이지 기능 구현
+                      (닉네임, 이미지) reducer를 이용해 기본 닉네임, 이미지와
+                      사용자가 입력한 값 조건적 출력 구현
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      gitHub 해당 프로젝트 저장소 담당 역할, Merge 및 conflict
+                      solve 담당
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      메인 페이지 전체 기능 구현 백그라운드 이미지에 동영상 자동
+                      재생 구현 (youtube Iframe API 사용) 배경 고정 스크롤 구현
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      다양한 라이브러리를 활용하여 애니메이션 기능 구현
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      프로젝트 팀장으로서 프로젝트 회의 일정 관리 및
+                      커뮤니케이션 중재, 기술 스펙 작성등의 개발 외적인 일도
+                      추가적으로 담당
                     </li>
                   </ul>
                   <div>
@@ -1247,7 +1336,10 @@ function Home() {
                         >
                           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                         </svg>
-                        Github, Notion 등 협업 워크플로우 경험
+                        해당 프로젝트 미디어쿼리와 부트스트랩으로 반응형 웹 구현
+                        - 부트스트랩 반응형 그리드 시스템을 써서 모바일 시안부터
+                        마크업 함 -미디어 쿼리를 사용해 합의한 breakpoint를
+                        기준으로 모바일과 데스크탑 시안을 나눠 스타일링
                       </li>
                       <li>
                         {" "}
@@ -1259,7 +1351,10 @@ function Home() {
                         >
                           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                         </svg>
-                        미디어 쿼리를 사용한 반응형 마크업 구현
+                        카카오맵 API를 사용하여 메인 (러닝) 페이지에서 사용자
+                        현재 위치 찾기를 웹에서 사용할 수 있게 구현 현재 위치의
+                        경도와 위도를 불러오고 현재 위치로 정렬해주는 click
+                        이벤트 커스템 구현
                       </li>
                       <li>
                         {" "}
@@ -1271,7 +1366,10 @@ function Home() {
                         >
                           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                         </svg>
-                        카카오 맵 API를 통해 런닝 페이지 구현
+                        react-hook으로 프로필 페이지 구현 및 프로필 편집 기능
+                        구현 로컬 스토리지 메서드 (get, setItem)으로 임시적 회원
+                        정보 수정 구현 => 추후 redux persist나 recoil persist를
+                        사용해서 리팩토링하려 했음
                       </li>
                     </ul>
                     <h5 style={{ marginBottom: "10px" }}>관련 링크</h5>
@@ -1336,22 +1434,51 @@ function Home() {
             <Exprience>
               <header>
                 <h3 className="Exprience_title">
-                  English
+                  Others
                   <span className="dot">.</span>
                 </h3>
               </header>
               <Divider></Divider>
               {/* 여기서는 모바일이랑 데스크탑으로 나눠서 박스 나열 */}
               <ExprienceDiv>
-                <p className="english_text">- 영여 회화 (토론 가능 수준)</p>
-                <p className="english_text">- 아이엘츠 5.5 (2021년 4월 취득)</p>
+                <p className="english_text">- 영어 회화 (토론 가능 수준)</p>
+                <p className="english_text">
+                  - 아이엘츠 5.5 (국제 공인 영어 능력 평가 시험)
+                </p>
                 <p className="english_text">
                   - 애들레이드 워킹 홀리데이 (2018년 12월 ~ 2019년 9월)
                 </p>
                 <p className="english_text">
-                  - 경동대학교 간호학과, 뉴욕대 의대 교수 초빙 통역 (2019년
-                  10월)
+                  - 경동대학교 간호학과, 의대 교수 초빙 강연 실시간 통역 경험
+                  보유 (2019년 10월)
                 </p>
+                <hr />
+                <h4>+ Learning</h4>
+                <br />
+                <div className="learning_box">
+                  <p className="english_text">
+                    노마드 코더 코코아톡 클론 / 크롬 클론 코딩 - 2021.10 ~ 11
+                  </p>
+                  <p className="english_text">
+                    김버그 HTML / CSS (DOM) - 2021.11 ~ 2022.12
+                  </p>
+                  <p className="english_text">
+                    드림코딩 브라우저 101 (DOM) - 2021.12 ~ 2022.01
+                  </p>
+                  <p className="english_text">
+                    모던 자바스크립트 Deep Dive - 2022.04 ~
+                  </p>
+
+                  <p className="english_text">
+                    코딩 애플 리액트 입문 - 2021.05 ~ 2022.06
+                  </p>
+                  <p className="english_text">
+                    노마드 코더 리액트 마스터 클래스 - 2021.07 ~ 2022.09
+                  </p>
+                  <p className="english_text">
+                    김민태 프론트 엔드 아카데미 - 2021.08 ~
+                  </p>
+                </div>
               </ExprienceDiv>
             </Exprience>
           </div>

@@ -59,7 +59,7 @@ export default function Footer() {
       <div className="footer_box">
         <i className="ri-mail-line"></i>
         <span>
-          <a>carrick035@gmail</a>
+          <a>carrick035@gmail.com</a>
         </span>
       </div>
       <div className="footer_box">
@@ -79,7 +79,11 @@ export default function Footer() {
         <i className="ri-github-fill"></i>
         <span>
           happyhermann{" "}
-          <a href="https://github.com/" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/happyhermann"
+            target="_blank"
+            rel="noreferrer"
+          >
             github
           </a>
         </span>
