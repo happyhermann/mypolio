@@ -994,6 +994,10 @@ function Home() {
 
                   <h4 className="Exprience_name">레디북스 온라인 서점</h4>
                   <p>2022년 8월 1일 ~ 2022년 9월 5일</p>
+                  <li style={{ fontWeight: "600", fontSize: "18px" }}>
+                    주요 기능 : 스테디 셀러 슬라이더 / 도서 검색 / 도서 상세
+                    정보 / 회원가입 및 로그인 / 로그아웃 기능
+                  </li>
                   <ul className="project_detail_box">
                     <li>
                       {" "}
@@ -1153,10 +1157,19 @@ function Home() {
                       alt="img"
                     />
                   </div>
+
                   <span className="Exprience_type">팀 프로젝트</span>
 
-                  <h4 className="Exprience_name">핀 테크 웹 프로젝트</h4>
+                  <h4 className="Exprience_name">
+                    핀 테크 (전자상거래) 웹 프로젝트
+                  </h4>
                   <p>2022년 6월 22일 ~ 2022년 7월 22일</p>
+                  <li style={{ fontWeight: "600", fontSize: "18px" }}>
+                    {" "}
+                    주요 기능 : 회원 가입, 로그인, 로그아웃 기능 / 관리자 기능 :
+                    제품 등록, 제품 수정 및 삭제 / 사용자 기능 : 계좌 등록 및
+                    해지 / 찜하기 / 제품 구매
+                  </li>
 
                   <ul className="project_detail_box">
                     <li>
