@@ -1576,6 +1576,32 @@ function Home() {
                       웹 접근성을 위해 Tap키로 홈화면 사진 접근 가능하게 함 (ul
                       => li태그 시멘틱 마크업)
                     </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      홈화면 랜덤 리스트와 검색해서 나온 사진 리스트 두 페이지를
+                      하나의 modal (사진 상제 정보)로 재활용함 (url 구분)
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      useLocation을 이용하여 mount된 현재 페이지의 파라미터
+                      정보를 가져와서 유저가 검색한 value를 painting 함
+                    </li>
                   </ul>
                   <h5 style={{ marginBottom: "10px" }}>관련 링크</h5>
                   <div>
