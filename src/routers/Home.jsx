@@ -1602,6 +1602,19 @@ function Home() {
                       useLocation을 이용하여 mount된 현재 페이지의 파라미터
                       정보를 가져와서 유저가 검색한 value를 painting 함
                     </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      react hooks (useEffect, Ref), intersectionObserver API로
+                      라이브러리 없이 사진 리스트에 무한 스크롤 구현
+                    </li>
                   </ul>
                   <h5 style={{ marginBottom: "10px" }}>관련 링크</h5>
                   <div>
