@@ -7,6 +7,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import profileImg from "../assets/australia.JPG";
+import unsplash from "../assets/unsplash.png";
+
 import { Routes, Link } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import Dropdown from "../components/Dropdown";
@@ -100,6 +102,11 @@ const NavLi = styled.li`
 const Wrapper = styled.section`
   width: 100%;
   line-height: 34px;
+
+  .fastcampus_box {
+    display: block;
+    width: 450px;
+  }
 
   .english_text {
     font-size: 16px;
@@ -560,7 +567,7 @@ function Home() {
   console.log(isMobile, window.innerWidth);
 
   AOS.init({
-    duration: 2000,
+    duration: 1000,
     once: true,
   });
 
@@ -829,6 +836,17 @@ function Home() {
                 <h4 className="Exprience_name">
                   패스트캠퍼스 메가바이트 스쿨 <br /> 프론트엔드 과정
                 </h4>
+                <div className="fastcampus_box">
+                  <img
+                    style={{ width: "100%" }}
+                    src="https://storage.googleapis.com/static.fastcampus.co.kr/prod/uploads/202112/130943-490/image-194.png"
+                    alt="fastcampus"
+                  />
+                  <span style={{ opacity: 0.6, fontSize: "13px" }}>
+                    *해당 부트캠프 커리큘럼
+                  </span>
+                </div>
+
                 <p>2022년 4월 11일 ~ 2022년 7월 29일 (수료)</p>
                 <ul className="project_detail_box">
                   <li>
@@ -855,6 +873,17 @@ function Home() {
                     </svg>
                     협업 프로젝트 3개 경험 (JS 미니, 리액트 미니, 파이널
                     프로젝트 경험)
+                  </li>
+                  <li>
+                    <svg
+                      class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                    실제 기업의 문제를 해결하는 기업연계 프로젝트
                   </li>
                 </ul>
               </ExprienceDiv>
@@ -1300,6 +1329,10 @@ function Home() {
                     2022년 5월 10일 ~ 2022년 6월 15일
                   </p>
                   <div>
+                    <li style={{ fontWeight: "600", fontSize: "18px" }}>
+                      {" "}
+                      주요 기능 : 지역별 플로깅 행사 공고 게시판,
+                    </li>
                     <ul className="project_detail_box">
                       <li>
                         {" "}
@@ -1419,9 +1452,139 @@ function Home() {
 
               <div class="item" data-aos="zoom-in">
                 <ExprienceDiv>
+                  <img
+                    className="project_img"
+                    src={unsplash}
+                    alt="unsplash thumnail"
+                  />
                   <span className="Exprience_type">개인 프로젝트</span>
-                  <h4 className="Exprience_name">쿠우우팡 플레이 OTT 웹</h4>
-                  <p>2022년 8월 22일 ~ 2022년 9월 (진행중)</p>
+                  <h4 className="Exprience_name">
+                    사진 검색 사이트 및 Frontend 개발
+                  </h4>
+
+                  <p>2022년 9월 26일 ~ 2022년 9월 28일</p>
+                  <li style={{ fontWeight: "600", fontSize: "18px" }}>
+                    {" "}
+                    주요 기능 : 홈 랜던 사진 리스트, 사진 상세 페이지, 사진 서치
+                    기능
+                  </li>
+                  <ul className="project_detail_box">
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      상업적 무료사진 사이트 Unsplash 사이트 클로닝
+                    </li>
+
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      React, Typescript 기반의 프로젝트
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      Flex Grid 시스템과 map으로 랜덤, 서치 photo list 구현
+                      (리스트에 한정되게 반응형 칼럼 그리드 적용)
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      useMatch로 개별 사진 리스트의 상세 페이지 (modal) 컴포넌트
+                      구현, null 반환하는 속성으로 toggle 상태 관리
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      Recoil 라이브러리와 props로 데이터 핸들링
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      웹 접근성을 위해 Tap키로 홈화면 사진 접근 가능하게 함 (ul
+                      => li태그 시멘틱 마크업)
+                    </li>
+                  </ul>
+                  <h5 style={{ marginBottom: "10px" }}>관련 링크</h5>
+                  <div>
+                    <svg
+                      class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                    <a
+                      href="https://unsplashcloning.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      사진 검색 사이트 Demo 배포 사이트
+                    </a>
+                  </div>
+                  <div>
+                    <svg
+                      class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                    <a
+                      href="https://github.com/happyhermann/unsplash"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      사진 검색 사이트 GitHub Repository Readme
+                    </a>
+                  </div>
+                  <p style={{ fontSize: "15px", paddingLeft: "5px" }}>
+                    *주의 : API 1시간당 한도가 있어서 초과시 일정 시간 후 데이터
+                    요청 가능합니다.
+                  </p>
                 </ExprienceDiv>
               </div>
             </Projects>
@@ -1473,10 +1636,13 @@ function Home() {
                     코딩 애플 리액트 입문 - 2021.05 ~ 2022.06
                   </p>
                   <p className="english_text">
-                    노마드 코더 리액트 마스터 클래스 - 2021.07 ~ 2022.09
+                    노마드 코더 리액트 마스터 클래스 - 2022.07 ~ 2022.09
                   </p>
                   <p className="english_text">
-                    김민태 프론트 엔드 아카데미 - 2021.08 ~
+                    김민태 프론트 엔드 아카데미 - 2022.08 ~
+                  </p>
+                  <p className="english_text">
+                    리액트 네이티브를 다루는 기술 - 2022.09 ~
                   </p>
                 </div>
               </ExprienceDiv>
