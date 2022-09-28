@@ -757,6 +757,23 @@ function Home() {
                       <div className="skill_img_box">
                         <img
                           className="skill_img"
+                          src="https://www.pngkey.com/png/full/826-8263801_react-native-debugger-react-native-icon.png"
+                          alt="git logo"
+                        />
+                      </div>
+                      <p className="skill_text">React Native</p>
+                      <ol>
+                        <li className="skill_detail">
+                          - expo 기반 간단한 네이티브 앱 구현 경험
+                        </li>
+                      </ol>
+                    </li>
+                  </div>
+                  <div class="item" data-aos="fade-right">
+                    <li className="skill">
+                      <div className="skill_img_box">
+                        <img
+                          className="skill_img"
                           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png"
                           alt="sass"
                         />
@@ -803,10 +820,10 @@ function Home() {
                       <p className="skill_text">Git</p>
                       <ol>
                         <li className="skill_detail">
-                          협업 메인 브랜치 관리 : PR, Merge 경험 (팀 프로젝트)
+                          - 협업 메인 브랜치 관리 : PR, Merge 경험 (팀 프로젝트)
                         </li>
                         <li className="skill_detail">
-                          프로젝트 코드 관리, add, commit, pull, push, branch
+                          - 프로젝트 코드 관리, add, commit, pull, push, branch
                           사용
                         </li>
                       </ol>
@@ -1331,7 +1348,8 @@ function Home() {
                   <div>
                     <li style={{ fontWeight: "600", fontSize: "18px" }}>
                       {" "}
-                      주요 기능 : 지역별 플로깅 행사 공고 게시판,
+                      주요 기능 : 지역별 플로깅 행사 공고 게시판, 러닝 및 쓰레기
+                      사진 촬영 프로토타입
                     </li>
                     <ul className="project_detail_box">
                       <li>
@@ -1615,6 +1633,11 @@ function Home() {
                   - 경동대학교 간호학과, 의대 교수 초빙 강연 실시간 통역 경험
                   보유 (2019년 10월)
                 </p>
+                <p className="english_text">
+                  - 양주시 일품학원 (입시학원) 에서 국어, 한국사 전임 강사로 1년
+                  1개월 가르친 경험
+                </p>
+
                 <hr />
                 <h4>+ Learning</h4>
                 <br />
