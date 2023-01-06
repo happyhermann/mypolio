@@ -8,6 +8,7 @@ const Section = styled.section`
 
     .nav_ul {
       display: flex;
+
       flex-direction: column;
       position: absolute;
       top: 58px;

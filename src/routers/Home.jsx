@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import profileImg from "../assets/australia.JPG";
-import unsplash from "../assets/unsplash.png";
+// import unsplash from "../assets/unsplash.png";
 
 import { Routes, Link } from "react-router-dom";
 import { useRef, useEffect } from "react";
@@ -29,6 +29,19 @@ const Headers = styled.header`
   z-index: 1;
   position: fixed;
   top: 0;
+
+  section {
+    color: red;
+
+    main {
+      color: blue;
+
+      &:hover {
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
 
   // fade in
   @keyframes slide-fade-in-dropdown-animation {
@@ -628,7 +641,7 @@ function Home() {
         </Dropdown>
       </Headers>
       <Wrapper>
-        <div class="item" data-aos="zoom-in">
+        <div class="item" data-aos="zoom-out">
           <Banner>
             <div className="link_buttons">
               <h3 className="hello">안녕하세요 이치윤입니다.</h3>
@@ -718,6 +731,22 @@ function Home() {
                       <div className="skill_img_box">
                         <img
                           className="skill_img"
+                          src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
+                          alt="typescript"
+                        />
+                      </div>
+                      <p className="skill_text">php</p>
+                      <ol>
+                        <li className="skill_detail"> - 채우기</li>
+                      </ol>
+                    </li>
+                  </div>
+
+                  <div class="item" data-aos="fade-right">
+                    <li className="skill">
+                      <div className="skill_img_box">
+                        <img
+                          className="skill_img"
                           src="https://www.elbuild.it/assets/img/techs/typescript.png"
                           alt="typescript"
                         />
@@ -741,7 +770,7 @@ function Home() {
                           alt="reactJS"
                         />
                       </div>
-                      <p className="skill_text">reactJS</p>
+                      <p className="skill_text">React.js</p>
                       <ol>
                         <li className="skill_detail"> - Hooks 사용</li>
                         <li className="skill_detail"> - Axios 비동기 통신</li>
@@ -769,66 +798,81 @@ function Home() {
                       </ol>
                     </li>
                   </div>
-                  <div class="item" data-aos="fade-right">
-                    <li className="skill">
-                      <div className="skill_img_box">
-                        <img
-                          className="skill_img"
-                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png"
-                          alt="sass"
-                        />
-                      </div>
-                      <p className="skill_text">sass</p>
-                      <ol>
-                        <li className="skill_detail">
-                          {" "}
-                          - 변수, 믹스인, 모듈 사용
-                        </li>
-                      </ol>
-                    </li>
-                  </div>
-                  <div class="item" data-aos="fade-right">
-                    <li className="skill">
-                      <div className="skill_img_box">
-                        <img
-                          className="skill_img"
-                          src="https://miro.medium.com/max/1400/1*l4nfMFKxfT4yNTWUK2Vsdg.png"
-                          alt="sass"
-                        />
-                      </div>
-                      <p className="skill_text">styled-components</p>
-                      <ol>
-                        <li className="skill_detail">
-                          - theme을 활용해 스타일링 일관성 유지 가능
-                        </li>
-                        <li className="skill_detail">
-                          {" "}
-                          - js로 동적이고 유연한 스타일링 구현
-                        </li>
-                      </ol>
-                    </li>
-                  </div>
-                  <div class="item" data-aos="fade-right">
-                    <li className="skill">
-                      <div className="skill_img_box">
-                        <img
-                          className="skill_img"
-                          src="https://assets-global.website-files.com/61c1a51822d2e922c98f9255/61f7e1885f0e93f3eb20987c_61ee8c522dd4c343976eebef_logo-git-icon-e1639407240682.png"
-                          alt="git logo"
-                        />
-                      </div>
-                      <p className="skill_text">Git</p>
-                      <ol>
-                        <li className="skill_detail">
-                          - 협업 메인 브랜치 관리 : PR, Merge 경험 (팀 프로젝트)
-                        </li>
-                        <li className="skill_detail">
-                          - 프로젝트 코드 관리, add, commit, pull, push, branch
-                          사용
-                        </li>
-                      </ol>
-                    </li>
-                  </div>
+                </div>
+                <div class="item" data-aos="fade-right">
+                  <li className="skill">
+                    <div className="skill_img_box">
+                      <img
+                        className="skill_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png "
+                        alt="reactJS"
+                      />
+                    </div>
+                    <p className="skill_text">Vue.js</p>
+                    <ol>
+                      <li className="skill_detail">채우기</li>
+                    </ol>
+                  </li>
+                </div>
+                <div class="item" data-aos="fade-right">
+                  <li className="skill">
+                    <div className="skill_img_box">
+                      <img
+                        className="skill_img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png"
+                        alt="sass"
+                      />
+                    </div>
+                    <p className="skill_text">sass</p>
+                    <ol>
+                      <li className="skill_detail">
+                        {" "}
+                        - 변수, 믹스인, 모듈 사용
+                      </li>
+                    </ol>
+                  </li>
+                </div>
+                <div class="item" data-aos="fade-right">
+                  <li className="skill">
+                    <div className="skill_img_box">
+                      <img
+                        className="skill_img"
+                        src="https://miro.medium.com/max/1400/1*l4nfMFKxfT4yNTWUK2Vsdg.png"
+                        alt="sass"
+                      />
+                    </div>
+                    <p className="skill_text">styled-components</p>
+                    <ol>
+                      <li className="skill_detail">
+                        - theme을 활용해 스타일링 일관성 유지 가능
+                      </li>
+                      <li className="skill_detail">
+                        {" "}
+                        - js로 동적이고 유연한 스타일링 구현
+                      </li>
+                    </ol>
+                  </li>
+                </div>
+                <div class="item" data-aos="fade-right">
+                  <li className="skill">
+                    <div className="skill_img_box">
+                      <img
+                        className="skill_img"
+                        src="https://assets-global.website-files.com/61c1a51822d2e922c98f9255/61f7e1885f0e93f3eb20987c_61ee8c522dd4c343976eebef_logo-git-icon-e1639407240682.png"
+                        alt="git logo"
+                      />
+                    </div>
+                    <p className="skill_text">Git</p>
+                    <ol>
+                      <li className="skill_detail">
+                        - 협업 메인 브랜치 관리 : PR, Merge 경험 (팀 프로젝트)
+                      </li>
+                      <li className="skill_detail">
+                        - 프로젝트 코드 관리, add, commit, pull, push, branch
+                        사용
+                      </li>
+                    </ol>
+                  </li>
                 </div>
               </div>
             </Skills>
@@ -848,6 +892,90 @@ function Home() {
               </header>
               <Divider></Divider>
               {/* 여기서는 모바일이랑 데스크탑으로 나눠서 박스 나열 */}
+              <ExprienceDiv>
+                <span className="Exprience_type">현업 개발</span>
+                <h4 className="Exprience_name">
+                  올수 폐유지 리사이클 앱 프론트 개발 / 보수 <br />
+                </h4>
+                <div className="fastcampus_box">
+                  <img
+                    style={{ width: "100%" }}
+                    src="https://i.ytimg.com/vi/R3yWRjjYwDw/maxresdefault.jpg"
+                    alt="fastcampus"
+                  />
+                </div>
+
+                <p>2022년 10월 4일 ~ 2022년 1월 4일 (근무)</p>
+                <ul className="project_detail_box">
+                  <li>
+                    {" "}
+                    <svg
+                      class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                    Vue.js 기반 앱 소스코드 Front-end 개발 및 유지 보수
+                  </li>
+                  <li>
+                    {" "}
+                    <svg
+                      class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                    UI 고도화 작업 및 퍼블리싱 전담 (vuejs, scss)
+                  </li>
+                  <li>
+                    <svg
+                      class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                    상용 이벤트 페이지 구현 (룰렛 경품 이벤트) 및 탄소중립 기계
+                    UI 구현
+                  </li>
+                  <li>
+                    <svg
+                      class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                    메인 페이지, 회원가입, 로그인 페이지, 정보찾기 UI 고도화
+                    전담
+                  </li>
+                </ul>
+
+                <div>
+                  <svg
+                    class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                  </svg>
+                  <a
+                    href="http://allsu.co.kr/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    올수 앱 공식 홈페이지 링크
+                  </a>
+                </div>
+              </ExprienceDiv>
+
               <ExprienceDiv>
                 <span className="Exprience_type">부트캠프</span>
                 <h4 className="Exprience_name">
@@ -978,6 +1106,117 @@ function Home() {
                 </h3>
               </header>
               <Divider></Divider>
+              <div class="item" data-aos="zoom-in">
+                <ExprienceDiv>
+                  <div className="project_img_box">
+                    <img
+                      className="project_img"
+                      src="https://user-images.githubusercontent.com/92570023/210963567-53569601-da57-4f6a-9aef-3c2f9a5fb25a.gif"
+                      alt="img"
+                    />
+                  </div>
+
+                  <span className="Exprience_type">현업 프론트 / UI 개발</span>
+
+                  <h4 className="Exprience_name">올수 앱 이벤트 페이지 구현</h4>
+                  <p>2022년 10월 28일 ~ 2022년 12월 1일</p>
+                  <li style={{ fontWeight: "600", fontSize: "18px" }}>
+                    {" "}
+                    주요 기능 : 룰렛 랜덤 돌리기 / 당첨자, 당첨품목, 등수 명단
+                    실시간 바인딩
+                  </li>
+
+                  <ul className="project_detail_box">
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      뷰js를 이용한 프론트 / UI 개발
+                    </li>
+
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      디자인 시안을 미디어쿼리와 computed를 이용해 모바일 기기별
+                      반응형 퍼블리싱
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      이중 v-for문을 통해 당첨자 명단 개별 동적 스타일 바인딩
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      라이브러리를 쓰지 않고 순수 css/scss로 룰렛 UI 애니메이션
+                      구현
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      gitlab을 통해 백엔드와 협업 / 테스트 후 1달간 상용 서버에
+                      이벤트 실제 런칭
+                    </li>
+                  </ul>
+                  <div>
+                    <h5 style={{ marginBottom: "10px" }}>관련 링크</h5>
+                    <div>
+                      <div>
+                        <svg
+                          class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                          focusable="false"
+                          viewBox="0 0 24 24"
+                          aria-hidden="true"
+                        >
+                          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                        </svg>
+                        <a
+                          href="https://allsu.kr/m/"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          올수 폐유지 수거 플랫폼 사이트
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </ExprienceDiv>
+              </div>
+
               <div class="item" data-aos="zoom-in">
                 <ExprienceDiv>
                   <div className="project_img_box">
@@ -1483,11 +1722,7 @@ function Home() {
 
               <div class="item" data-aos="zoom-in">
                 <ExprienceDiv>
-                  <img
-                    className="project_img"
-                    src={unsplash}
-                    alt="unsplash thumnail"
-                  />
+                  <img className="project_img" alt="unsplash thumnail" />
                   <span className="Exprience_type">개인 프로젝트</span>
                   <h4 className="Exprience_name">
                     사진 검색 사이트 및 Frontend 개발
