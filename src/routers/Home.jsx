@@ -726,21 +726,6 @@ function Home() {
                       </ol>
                     </li>
                   </div>
-                  <div class="item" data-aos="fade-right">
-                    <li className="skill">
-                      <div className="skill_img_box">
-                        <img
-                          className="skill_img"
-                          src=" https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png"
-                          alt="typescript"
-                        />
-                      </div>
-                      <p className="skill_text">php</p>
-                      <ol>
-                        <li className="skill_detail"> - 채우기</li>
-                      </ol>
-                    </li>
-                  </div>
 
                   <div class="item" data-aos="fade-right">
                     <li className="skill">
@@ -798,81 +783,86 @@ function Home() {
                       </ol>
                     </li>
                   </div>
-                </div>
-                <div class="item" data-aos="fade-right">
-                  <li className="skill">
-                    <div className="skill_img_box">
-                      <img
-                        className="skill_img"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png "
-                        alt="reactJS"
-                      />
-                    </div>
-                    <p className="skill_text">Vue.js</p>
-                    <ol>
-                      <li className="skill_detail">채우기</li>
-                    </ol>
-                  </li>
-                </div>
-                <div class="item" data-aos="fade-right">
-                  <li className="skill">
-                    <div className="skill_img_box">
-                      <img
-                        className="skill_img"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png"
-                        alt="sass"
-                      />
-                    </div>
-                    <p className="skill_text">sass</p>
-                    <ol>
-                      <li className="skill_detail">
-                        {" "}
-                        - 변수, 믹스인, 모듈 사용
-                      </li>
-                    </ol>
-                  </li>
-                </div>
-                <div class="item" data-aos="fade-right">
-                  <li className="skill">
-                    <div className="skill_img_box">
-                      <img
-                        className="skill_img"
-                        src="https://miro.medium.com/max/1400/1*l4nfMFKxfT4yNTWUK2Vsdg.png"
-                        alt="sass"
-                      />
-                    </div>
-                    <p className="skill_text">styled-components</p>
-                    <ol>
-                      <li className="skill_detail">
-                        - theme을 활용해 스타일링 일관성 유지 가능
-                      </li>
-                      <li className="skill_detail">
-                        {" "}
-                        - js로 동적이고 유연한 스타일링 구현
-                      </li>
-                    </ol>
-                  </li>
-                </div>
-                <div class="item" data-aos="fade-right">
-                  <li className="skill">
-                    <div className="skill_img_box">
-                      <img
-                        className="skill_img"
-                        src="https://assets-global.website-files.com/61c1a51822d2e922c98f9255/61f7e1885f0e93f3eb20987c_61ee8c522dd4c343976eebef_logo-git-icon-e1639407240682.png"
-                        alt="git logo"
-                      />
-                    </div>
-                    <p className="skill_text">Git</p>
-                    <ol>
-                      <li className="skill_detail">
-                        - 협업 메인 브랜치 관리 : PR, Merge 경험 (팀 프로젝트)
-                      </li>
-                      <li className="skill_detail">
-                        - 프로젝트 코드 관리, add, commit, pull, push, branch
-                        사용
-                      </li>
-                    </ol>
-                  </li>
+                  <div class="item" data-aos="fade-right">
+                    <li className="skill">
+                      <div className="skill_img_box">
+                        <img
+                          className="skill_img"
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png "
+                          alt="reactJS"
+                        />
+                      </div>
+                      <p className="skill_text">Vue.js</p>
+                      <ol>
+                        <li className="skill_detail">
+                          - Vue 인스턴스 라이프 사이클 이해 / 현업 응용
+                        </li>
+                        <li className="skill_detail">
+                          - Vue 내장 디렉티브 효율적 활용
+                        </li>
+                      </ol>
+                    </li>
+                  </div>
+                  <div class="item" data-aos="fade-right">
+                    <li className="skill">
+                      <div className="skill_img_box">
+                        <img
+                          className="skill_img"
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png"
+                          alt="sass"
+                        />
+                      </div>
+                      <p className="skill_text">sass</p>
+                      <ol>
+                        <li className="skill_detail">
+                          {" "}
+                          - 변수, 믹스인, 모듈 사용
+                        </li>
+                      </ol>
+                    </li>
+                  </div>
+                  <div class="item" data-aos="fade-right">
+                    <li className="skill">
+                      <div className="skill_img_box">
+                        <img
+                          className="skill_img"
+                          src="https://miro.medium.com/max/1400/1*l4nfMFKxfT4yNTWUK2Vsdg.png"
+                          alt="sass"
+                        />
+                      </div>
+                      <p className="skill_text">styled-components</p>
+                      <ol>
+                        <li className="skill_detail">
+                          - theme을 활용해 스타일링 일관성 유지 가능
+                        </li>
+                        <li className="skill_detail">
+                          {" "}
+                          - js로 동적이고 유연한 스타일링 구현
+                        </li>
+                      </ol>
+                    </li>
+                  </div>
+                  <div class="item" data-aos="fade-right">
+                    <li className="skill">
+                      <div className="skill_img_box">
+                        <img
+                          className="skill_img"
+                          src="https://assets-global.website-files.com/61c1a51822d2e922c98f9255/61f7e1885f0e93f3eb20987c_61ee8c522dd4c343976eebef_logo-git-icon-e1639407240682.png"
+                          alt="git logo"
+                        />
+                      </div>
+                      <p className="skill_text">Git</p>
+                      <ol>
+                        <li className="skill_detail">
+                          - 협업 메인 브랜치 관리 : PR, Merge 경험 (팀 프로젝트)
+                        </li>
+                        <li className="skill_detail">
+                          - 프로젝트 코드 관리, add, commit, pull, push, branch
+                          사용
+                        </li>
+                      </ol>
+                    </li>
+                  </div>
                 </div>
               </div>
             </Skills>
@@ -952,8 +942,7 @@ function Home() {
                     >
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
                     </svg>
-                    메인 페이지, 회원가입, 로그인 페이지, 정보찾기 UI 고도화
-                    전담
+                    메인 페이지, 회원가입, 로그인 페이지, 정보찾기 구현
                   </li>
                 </ul>
 
