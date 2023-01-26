@@ -543,6 +543,8 @@ function Home() {
   const [dropdownVisibility, setDropdownVisibility] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
+  const [show, setShow] = useState(false);
+
   // nav 스타일링
   const [currentTab, setCurrentTab] = useState();
 
@@ -587,6 +589,11 @@ function Home() {
   return (
     <>
       <Headers>
+        {
+          show && <div className="one">지히</div>
+          // <div className="two">지히아님</div>
+        }
+
         <Name className="myName">
           <h1 onClick={onTop}>이치윤입니다</h1>
         </Name>
@@ -885,7 +892,7 @@ function Home() {
               <ExprienceDiv>
                 <span className="Exprience_type">현업 개발</span>
                 <h4 className="Exprience_name">
-                  올수 폐유지 리사이클 앱 프론트 개발 / 보수 <br />
+                  올수 폐유지 리사이클 앱 프론트 개발] / 보수 <br />
                 </h4>
                 <div className="fastcampus_box">
                   <img
@@ -1205,6 +1212,122 @@ function Home() {
                   </div>
                 </ExprienceDiv>
               </div>
+
+              <br />
+
+              <br />
+
+              <br />
+              <hr />
+              <br />
+
+              <div class="item" data-aos="zoom-in">
+                <ExprienceDiv>
+                  <img
+                    className="project_img"
+                    src="https://user-images.githubusercontent.com/92570023/214727068-58f09c6e-7e4d-405d-8bc2-7165f7bb8518.gif"
+                    alt="unsplash thumnail"
+                  />
+                  <span className="Exprience_type">개인 프로젝트</span>
+                  <h4 className="Exprience_name">
+                    채팅 어플리케이션 Frontend 및 DB 개발
+                  </h4>
+
+                  <p>2023년 1월 18일 ~ 2023년 1월 25일</p>
+                  <li style={{ fontWeight: "600", fontSize: "18px" }}>
+                    {" "}
+                    주요 기능 : 회원가입, 로그인, 채팅 상대 추가, 1:1 채팅
+                  </li>
+                  <ul className="project_detail_box">
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      Nextron (Electron + nextjs)으로 구현
+                    </li>
+
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      Firebase 기반 실시간 데이터 베이스
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      Ant-Design UI 라이브러리 사용
+                    </li>
+                    <li>
+                      {" "}
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                      이메일 회원가입 / 로그인 기능 구현
+                    </li>
+
+                    <li>
+                      <svg
+                        class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                      </svg>
+                    </li>
+                  </ul>
+                  <h5 style={{ marginBottom: "10px" }}>관련 링크</h5>
+                  <div>
+                    <svg
+                      class="MuiSvgIcon-root Explain__ExplainCheckIcon-sc-1huy195-2 gCPosX check"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path>
+                    </svg>
+                    <a
+                      href="https://github.com/happyhermann/chat-apps"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      채팅 앱 github 주소
+                    </a>
+                  </div>
+                </ExprienceDiv>
+              </div>
+
+              <br />
+
+              <br />
+
+              <br />
+              <hr />
+              <br />
 
               <div class="item" data-aos="zoom-in">
                 <ExprienceDiv>
