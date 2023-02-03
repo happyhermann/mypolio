@@ -654,7 +654,7 @@ function Home() {
               <h3 className="hello">안녕하세요 이치윤입니다.</h3>
               <div className="introduce_text_box">
                 <p className="introduce_text">
-                  프론트엔드 개발자를 희망하고 있습니다.
+                  퍼블리싱을 즐기는 프론트 엔드 개발자입니다.
                 </p>
                 <p className="introduce_text">
                   사회와 공동체, 사람들과 어울리고 의견을 나누는 것을
